@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Masala - Spice Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('spice-background.jpg'); /* Use a valid relative or URL path */
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 10px;
+      border-radius: 10px;
+    }
+    nav a {
+      color: #ffcc00;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .product-list {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  </style>
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.style.display = 'none');
+      document.getElementById(pageId).style.display = 'block';
+    }
+    window.onload = () => showPage('welcome');
+  </script>
+</head>
+<body>
+<div style="background-color: red;">
+
+  <header>
+    <h1>Shri Masala</h1>
+    <nav>
+      <a href="#" onclick="showPage('welcome')">Welcome</a>
+      <a href="#" onclick="showPage('about')">About Us</a>
+      <a href="#" onclick="showPage('products')">Products & Services</a>
+      <a href="#" onclick="showPage('contact')">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="welcome" class="page">
+    <h2>Welcome to Shri Masala</h2>
+    <p>Your one-stop shop for all kinds of authentic Indian spices and masala powders.</p>
+    <ol>
+      <li>Welcome to our Spice Shop – where flavor comes alive!</li>
+      <li>Step into a world of aromas that awaken your senses.</li>
+      <li>Explore exotic spices from across the globe.</li>
+      <li>From sweet to smoky, we’ve got every taste covered.</li>
+      <li>Our spices are freshly sourced and packed with care.</li>
+      <li>Discover ancient blends and secret family recipes.</li>
+      <li>Need something bold? Try our handcrafted chili mixes.</li>
+      <li>We carry rare spices you won’t find at regular stores.</li>
+      <li>Perfect for home cooks and professional chefs alike.</li>
+      <li>Looking for something specific? Our staff is here to help!</li>
+    </ol>
+  </section>
+
+  <section id="about" class="page" style="display:none;">
+    <h2>About Us</h2>
+    <ol>
+      <li><b>Shri Masala</b> is your destination for the freshest, most flavorful spices from around the world. We bring hand-selected, responsibly sourced spices to elevate your cooking.</li>
+      <li>Whether you’re an experienced chef or a curious home cook, we help you discover new flavors and cooking inspiration.</li>
+      <li>We work with trusted growers and ensure high-quality, fresh, and potent ingredients.</li>
+      <li>We also offer small-batch blends, rubs, and seasonal mixes, with expert cooking advice and ethical sourcing practices.</li>
+      <li>Thank you for supporting small businesses. Let’s spice things up together!</li>
+    </ol>
+  </section>
+
+  <section id="products" class="page" style="display:none;">
+    <h2>Our Products & Services</h2>
+    <div class="product-list">
+      <ul>
+        <li>Turmeric - ₹250/kg</li>
+        <li>Coriander - ₹180/kg</li>
+        <li>Cumin - ₹320/kg</li>
+        <li>Cardamom - ₹1800/kg</li>
+        <li>Clove - ₹950/kg</li>
+        <li>Black Pepper - ₹600/kg</li>
+        <li>Saffron - ₹150,000/kg</li>
+        <li>Garam Masala - ₹500/kg</li>
+        <li>Chaat Masala - ₹280/kg</li>
+        <li>Pav Bhaji Masala - ₹300/kg</li>
+        <!-- Add more as needed -->
+      </ul>
+    </div>
+  </section>
+ 
+
+  <section id="contact" class="page" style="display:none;">
+    <h2>Contact Us</h2>
+    <h4>
+      Interested in our spices? We’d love to help you find the perfect blend!<br>
+      To place an order or inquire about our products, reach out via phone, email, or social media.<br>
+      Custom spice blends and bulk orders available.<br>
+    </h4>
+    <p>Email: contact@shrimasala.com</p>
+    <p>Phone: +91 7359185142</p>
+    <p>Address: D-9 Panchvati Street, Gorwa, Vadodara, India</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Shri Masala. All rights reserved.</p>
+  </footer>
+ 
+</div>
+
+</body>
+</html>
